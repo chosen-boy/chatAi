@@ -12,7 +12,10 @@
         <script type="text/javascript">
 			 // wx.miniProgram.navigateBack({delta: 1})
             wx.miniProgram.postMessage({ data: '获取成功' })
-            
+            window.addEventListener('message', function(event) {
+  const message = event.data;
+  console.log('接收到来自小程序的消息：', message);
+});
            
         </script>
     </body>
