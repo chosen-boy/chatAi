@@ -15,12 +15,12 @@
 		console.log(paramValue)
 		    const box=document.getElementById("box")
 		   box.innerHTML='获取到的数据为'+paramValue
-		
+		   console.log(box)
 			 // wx.miniProgram.navigateBack({delta: 1})
             wx.miniProgram.postMessage({ data: '获取成功' })
            
            
         </script>
-  <div id='box' style="height="100px;color="black";"></div>
+  <div id='box' style="height="100px";color="black";"></div>
     </body>
 </html>
